@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Wireshark - Sulayman Aliouche</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wireshark-header">
+        <h1>CV Wireshark - Sulayman Aliouche</h1>
+    </div>
+    <div class="table-container">
+        <div class="table-header">
+            <span>No.</span>
+            <span>Temps</span>
+            <span>Source</span>
+            <span>Destination</span>
+            <span>Protocole</span>
+            <span>Taille</span>
+            <span>Informations</span>
+        </div>
+        <div class="table-row" onclick="showDetails('personal')">
+            <span>1</span>
+            <span>0.001</span>
+            <span>Aliouche Sulayman</span>
+            <span>Base</span>
+            <span>TCP</span>
+            <span>50 octets</span>
+            <span>Informations personnelles</span>
+        </div>
+        <div class="table-row" onclick="showDetails('formation')">
+            <span>2</span>
+            <span>0.005</span>
+            <span>Formation</span>
+            <span>Degree</span>
+            <span>TCP</span>
+            <span>128 octets</span>
+            <span>Formation</span>
+        </div>
+        <div class="table-row" onclick="showDetails('competences')">
+            <span>3</span>
+            <span>0.009</span>
+            <span>Compétences</span>
+            <span>Skills</span>
+            <span>TCP</span>
+            <span>300 octets</span>
+            <span>Compétences et métiers</span>
+        </div>
+        <div class="table-row" onclick="showDetails('experience')">
+            <span>4</span>
+            <span>0.012</span>
+            <span>Entreprise</span>
+            <span>Company</span>
+            <span>TCP</span>
+            <span>256 octets</span>
+            <span>Expériences professionnelles</span>
+        </div>
+        <div class="table-row" onclick="showDetails('certifications')">
+            <span>5</span>
+            <span>0.015</span>
+            <span>Certification</span>
+            <span>Certification</span>
+            <span>TCP</span>
+            <span>64 octets</span>
+            <span>Certifications</span>
+        </div>
+        <div class="table-row" onclick="showDetails('interets')">
+            <span>6</span>
+            <span>0.018</span>
+            <span>Intérêts</span>
+            <span>Hobbies</span>
+            <span>UDP</span>
+            <span>80 octets</span>
+            <span>Centres d’intérêts</span>
+        </div>
+        <div class="table-row" onclick="showDetails('langues')">
+            <span>7</span>
+            <span>0.020</span>
+            <span>Langues</span>
+            <span>Languages</span>
+            <span>UDP</span>
+            <span>48 octets</span>
+            <span>Langues parlées</span>
+        </div>
+    </div>
+    <div id="details" class="details-panel">
+        <h3>Détails</h3>
+        <p id="details-content">Cliquez sur une ligne pour afficher les détails.</p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
